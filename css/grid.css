@@ -1,0 +1,51 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(auto-fit, minmax(50px, auto));
+}
+
+main {
+  grid-column: 1/13;
+}
+
+header {
+  grid-column: 1/13;
+}
+
+nav {
+  grid-column: 1/13;
+  align-self: center;
+}
+
+section {
+  grid-column: 3/11;
+}
+
+footer {
+  grid-column: 1/13;
+}
+
+#home {
+  align-self: center;
+}
+
+#första {
+  grid-column: 2/4;}
+
+@media only screen and (max-width: 500px) {
+  main {
+    grid-column: 1/13;
+  }
+
+  nav {
+    grid-column: 1/13;
+  }
+
+  section {
+    grid-column: 1/13;
+  }
+  #toppbild {
+    grid-column: 1/13;
+    grid-row: auto;
+  }
+}
